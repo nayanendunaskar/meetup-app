@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+nav {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 10px #ededed;
+}
+nav input {
+  padding: 0.3rem 0.7rem;
+}
+.events {
+  display: flex;
+  gap: 2rem;
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.event {
+  position: relative;
+  cursor: pointer;
+}
+.event .tag {
+  background-color: #ffffff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.event img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px #999999;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  justify-content: space-between;
+}
+.header select {
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  color: #666666;
+}
+.single-event {
+  display: flex;
+}
+.main-info {
+  width: 55%;
+  text-align: left;
+  padding: 3rem;
+}
+.details {
+  width: 70%;
+}
+.speakers img {
+  height: 200px;
+  width: 100px;
+  border-radius: 50%;
+}
+.event-tag {
+  background-color: #ff6962;
+  display: inline;
+  margin: 0.5rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 30px;
+  color: #ffffff;
+}
+button {
+  background-color: #ff6962;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+}
+.single-event img {
+  width: 50%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.rsvp-form {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
